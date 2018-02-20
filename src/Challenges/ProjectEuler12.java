@@ -16,8 +16,9 @@ public class ProjectEuler12
             current_value = current_value.add(index);
             int length = Support.BigIntegerMethods.getDivisors(current_value).size();
             if (length > 500)
-                System.out.println(current_value);
+                unsatisfied = false;
             index = index.add(BigInteger.ONE);
         }
+        System.out.println(current_value);
     }
 }
