@@ -1,5 +1,7 @@
 package Challenges;
 
+// TODO: DONE
+
 // TODO: Didn't solve computationally, look at how each down and right could be either 1 or 0
 // TODO: Then realize for 2x2 it's either
 // TODO: 1100 1010 1001 0110 0101 or 0011
