@@ -1,8 +1,5 @@
 package Support;
 
-import jdk.jfr.Description;
-import jdk.jfr.Name;
-
 import java.lang.reflect.Array;
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -10,8 +7,6 @@ import java.util.Collections;
 
 public class BigIntegerMethods
 {
-    @Name("getDivisors")
-    @Description("Returns divisors of BigInteger in ArrayList")
     public static ArrayList<BigInteger> getDivisors(BigInteger b)
     {
         ArrayList<BigInteger> divisors = new ArrayList<>();
@@ -28,8 +23,6 @@ public class BigIntegerMethods
         return divisors;
     }
 
-    @Name("sumList")
-    @Description("Returns BigInteger sum of ArrayList")
     public static BigInteger sumList(ArrayList<BigInteger> b)
     {
         BigInteger b_sum = BigInteger.ZERO;
@@ -38,8 +31,6 @@ public class BigIntegerMethods
         return b_sum;
     }
 
-    @Name("isPerfect")
-    @Description("Returns BigInteger with -1 if deficient, 0 if perfect, and 1 if abundant")
     public static BigInteger isPerfect(BigInteger b)
     {
         BigInteger result = sumList(getDivisors(b)).subtract(b);
